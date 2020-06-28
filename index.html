@@ -9,10 +9,5 @@ layout: default
         <p>{{post.excerpt | strip_html}}</p>
     {% endfor %}
 {% endif %}
-{% if paginator.total_pages = 1 %}
-    {% for post in site.posts %}
-        <h2>{{post.title}}</h2>
-        <p>{{post.content}}</p>
-    {% endfor %}
-{% endif %}
+
 </div>
