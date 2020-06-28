@@ -8,6 +8,11 @@ layout: default
         <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
         <p>{{post.excerpt | strip_html}}</p>
     {% endfor %}
+{% else %}
+    {% for post in site.posts %}
+        <h2>{{post.title}}</h2>
+        <p>{{post.content}}</p>
+    {% endfor %}
 {% endif %}
 
 </div>
