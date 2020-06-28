@@ -8,14 +8,13 @@ email: your@email.com
 
 highlighter: rouge
 markdown: kramdown
-### exclude the instructions / write-up in the README.md
 
 
 # Tracker
-analytics: UA-83979019-1
+analytics:
 
 # Comments
-disqus-shortname: webjeda-demo
+disqus-shortname:
 
 
 #optimization
@@ -34,8 +33,8 @@ compress_html:
 sass:
  style: compressed
 
-exclude:
-- README.md
+#exclude:
+#- README.md
 
 
 gems: [jekyll-seo-tag, jekyll-paginate]
